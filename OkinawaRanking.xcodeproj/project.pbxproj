@@ -13,6 +13,8 @@
 		E51C1AE925A31C0B00721BE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E51C1AE825A31C0B00721BE1 /* Assets.xcassets */; };
 		E51C1AEC25A31C0B00721BE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E51C1AEB25A31C0B00721BE1 /* Preview Assets.xcassets */; };
 		E51C1AEF25A31C0B00721BE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E51C1AED25A31C0B00721BE1 /* LaunchScreen.storyboard */; };
+		E55AC64725A74C780026489A /* TripRanking.json in Resources */ = {isa = PBXBuildFile; fileRef = E55AC64625A74C780026489A /* TripRanking.json */; };
+		E55AC64A25A74D0B0026489A /* TripRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55AC64925A74D0B0026489A /* TripRanking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E51C1AEB25A31C0B00721BE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E51C1AEE25A31C0B00721BE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E51C1AF025A31C0B00721BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E55AC64625A74C780026489A /* TripRanking.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TripRanking.json; sourceTree = "<group>"; };
+		E55AC64925A74D0B0026489A /* TripRanking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRanking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				E51C1AE225A31C0600721BE1 /* AppDelegate.swift */,
 				E51C1AE425A31C0600721BE1 /* SceneDelegate.swift */,
 				E51C1AE625A31C0600721BE1 /* ContentView.swift */,
+				E55AC64925A74D0B0026489A /* TripRanking.swift */,
+				E55AC64625A74C780026489A /* TripRanking.json */,
 				E51C1AE825A31C0B00721BE1 /* Assets.xcassets */,
 				E51C1AED25A31C0B00721BE1 /* LaunchScreen.storyboard */,
 				E51C1AF025A31C0B00721BE1 /* Info.plist */,
@@ -133,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E51C1AEF25A31C0B00721BE1 /* LaunchScreen.storyboard in Resources */,
+				E55AC64725A74C780026489A /* TripRanking.json in Resources */,
 				E51C1AEC25A31C0B00721BE1 /* Preview Assets.xcassets in Resources */,
 				E51C1AE925A31C0B00721BE1 /* Assets.xcassets in Resources */,
 			);
@@ -146,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E51C1AE325A31C0600721BE1 /* AppDelegate.swift in Sources */,
+				E55AC64A25A74D0B0026489A /* TripRanking.swift in Sources */,
 				E51C1AE525A31C0600721BE1 /* SceneDelegate.swift in Sources */,
 				E51C1AE725A31C0600721BE1 /* ContentView.swift in Sources */,
 			);
