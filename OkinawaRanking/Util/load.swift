@@ -1,13 +1,11 @@
 //
-//  TripRanking.swift
+//  load.swift
 //  OkinawaRanking
 //
-//  Created by kazuya on 2021/01/07.
+//  Created by kazuya on 2021/01/09.
 //
 
 import Foundation
-
-var tripRanking: [TripRanking] = load("TripRanking.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
@@ -29,13 +27,4 @@ func load<T: Decodable>(_ filename: String) -> T {
     } catch {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
-}
-
-struct TripRanking: Hashable, Codable {
-    var ranking: Int
-    var landname: String
-    var address: String
-    var latitude: Double
-    var longitude: Double
-    var imageUrl: String
 }
