@@ -15,6 +15,10 @@
 		E51C1AEF25A31C0B00721BE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E51C1AED25A31C0B00721BE1 /* LaunchScreen.storyboard */; };
 		E55AC64725A74C780026489A /* TripRanking.json in Resources */ = {isa = PBXBuildFile; fileRef = E55AC64625A74C780026489A /* TripRanking.json */; };
 		E55AC64A25A74D0B0026489A /* TripRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55AC64925A74D0B0026489A /* TripRanking.swift */; };
+		E55AC65125A8AC380026489A /* load.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55AC65025A8AC380026489A /* load.swift */; };
+		E55AC65825A8ACA20026489A /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55AC65725A8ACA20026489A /* TabBarView.swift */; };
+		E55AC65D25A8ACDE0026489A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55AC65C25A8ACDE0026489A /* HomeView.swift */; };
+		E55AC66125A8AD3A0026489A /* TripRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55AC66025A8AD3A0026489A /* TripRankingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		E51C1AF025A31C0B00721BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E55AC64625A74C780026489A /* TripRanking.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TripRanking.json; sourceTree = "<group>"; };
 		E55AC64925A74D0B0026489A /* TripRanking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRanking.swift; sourceTree = "<group>"; };
+		E55AC65025A8AC380026489A /* load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = load.swift; sourceTree = "<group>"; };
+		E55AC65725A8ACA20026489A /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		E55AC65C25A8ACDE0026489A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E55AC66025A8AD3A0026489A /* TripRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRankingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +70,11 @@
 			children = (
 				E51C1AE225A31C0600721BE1 /* AppDelegate.swift */,
 				E51C1AE425A31C0600721BE1 /* SceneDelegate.swift */,
-				E51C1AE625A31C0600721BE1 /* ContentView.swift */,
-				E55AC64925A74D0B0026489A /* TripRanking.swift */,
-				E55AC64625A74C780026489A /* TripRanking.json */,
+				E55AC65625A8AC7F0026489A /* ViewModel */,
+				E55AC65525A8AC790026489A /* View */,
+				E55AC64F25A8AC280026489A /* Util */,
+				E55AC64E25A8ABDB0026489A /* Model */,
+				E55AC65425A8AC5C0026489A /* JSON */,
 				E51C1AE825A31C0B00721BE1 /* Assets.xcassets */,
 				E51C1AED25A31C0B00721BE1 /* LaunchScreen.storyboard */,
 				E51C1AF025A31C0B00721BE1 /* Info.plist */,
@@ -79,6 +89,48 @@
 				E51C1AEB25A31C0B00721BE1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E55AC64E25A8ABDB0026489A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E55AC64925A74D0B0026489A /* TripRanking.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E55AC64F25A8AC280026489A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E55AC65025A8AC380026489A /* load.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		E55AC65425A8AC5C0026489A /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				E55AC64625A74C780026489A /* TripRanking.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		E55AC65525A8AC790026489A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E51C1AE625A31C0600721BE1 /* ContentView.swift */,
+				E55AC65725A8ACA20026489A /* TabBarView.swift */,
+				E55AC65C25A8ACDE0026489A /* HomeView.swift */,
+				E55AC66025A8AD3A0026489A /* TripRankingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E55AC65625A8AC7F0026489A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +205,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E51C1AE325A31C0600721BE1 /* AppDelegate.swift in Sources */,
+				E55AC65D25A8ACDE0026489A /* HomeView.swift in Sources */,
 				E55AC64A25A74D0B0026489A /* TripRanking.swift in Sources */,
 				E51C1AE525A31C0600721BE1 /* SceneDelegate.swift in Sources */,
+				E55AC66125A8AD3A0026489A /* TripRankingView.swift in Sources */,
+				E55AC65125A8AC380026489A /* load.swift in Sources */,
+				E55AC65825A8ACA20026489A /* TabBarView.swift in Sources */,
 				E51C1AE725A31C0600721BE1 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
